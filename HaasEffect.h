@@ -1,10 +1,9 @@
 // Selim Sheta, 2021. You may reuse this code.
+// Haas Effect Processor - Uses the Haas effect to spread a mono signal in the stereo field.
 
 #include <vector>
 
-/* Haas Effect
-Uses the Haas effect to spread a mono signal in the stereo field.
-Use the ProcessSample function to process a mono signal. The output will be an std::vector in the form [LeftChSample, RightChSample]. 
+/* Use the ProcessSample function to process a mono signal. The output will be an std::vector in the form [LeftChSample, RightChSample]. 
 Depth is the delay time in ms, and Separation controls the Wet/Dry ratio in the Left and Right channel:
 Separation = 1 :  the Left channel is 100% wet and the Right channel is 0% wet. 
 Separation = 0 : Both channels are 50% wet.
